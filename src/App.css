@@ -1,5 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #282c34;
+  font-family: helvetica;
 }
 
 .App {
@@ -34,12 +41,15 @@ body {
 }
 
 main {
-  padding: 10px;
   height: 80vh;
   margin: 10vh 0 10vh;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
+}
+
+.messages {
+  padding: 10px;
 }
 
 main::-webkit-scrollbar {

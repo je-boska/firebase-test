@@ -84,8 +84,10 @@ const ChatRoom = () => {
 
   return (
     <main>
-      {messages &&
-        messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
+      <div className='messages'>
+        {messages &&
+          messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
+      </div>
       <div ref={dummy}></div>
       <form onSubmit={sendMessage}>
         <input value={formValue} onChange={e => setFormValue(e.target.value)} />
